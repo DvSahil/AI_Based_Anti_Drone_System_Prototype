@@ -1,6 +1,6 @@
-# 🛡️ AI-Powered Anti-Drone Detection & Tracking System
+# 🛰️ Autonomous Anti-Drone Detection & Tracking Platform
 
-> **Real-Time Drone Detection • Intelligent Tracking • Computer Vision • Robotics • Automation**
+> **Vision-Based Drone Detection • Real-Time Object Tracking • Embedded Automation**
 
 <p align="center">
 
@@ -14,45 +14,45 @@
 
 ---
 
-## 📖 Overview
+## 📖 About the Project
 
-This repository presents an **AI-driven anti-drone surveillance prototype** that combines **deep learning, computer vision, embedded systems, and automation**.
+This project is a prototype **counter-drone surveillance system** built around **computer vision, deep learning, and embedded hardware control**.
 
-The system continuously monitors a live camera feed, detects drones using a **custom-trained YOLOv8 model**, estimates their position, and commands a pan-tilt mechanism through an Arduino-based controller to keep the target centered.
+A live video feed is analyzed frame-by-frame using a **custom-trained YOLOv8 model** to detect aerial drones. Once a target is identified, the system calculates its relative position and drives a **pan-tilt servo mechanism** via an Arduino microcontroller to keep the drone centered in frame.
 
-> **Note:** This repository focuses on **detection, tracking, and automation** for research and educational purposes.
+> **Disclaimer:** Built strictly for **research, learning, and prototyping** purposes — this is a detection & tracking demo, not a deployable defense system.
 
-## ✨ Features
+## ✨ Key Features
 
-- 🎯 Real-time drone detection
-- 🤖 Automatic visual tracking
-- 📷 Live webcam inference
-- ⚡ Fast YOLOv8 inference
-- 🔌 Arduino communication
-- 🎥 Servo pan-tilt tracking
-- 🧠 Modular AI pipeline
+- 🎯 Real-time drone detection from live video
+- 🤖 Closed-loop visual tracking
+- 📷 Webcam-based inference pipeline
+- ⚡ Lightweight, fast YOLOv8 inference
+- 🔌 Serial communication with Arduino
+- 🎥 Pan-tilt servo target following
+- 🧠 Modular, extendable AI pipeline design
 
-## 🏗️ Workflow
+## 🏗️ System Workflow
 
 ```text
-Camera → YOLOv8 → Detection → Tracking → Arduino → Pan-Tilt Motion
+Camera Feed → YOLOv8 Inference → Target Localization → Tracking Logic → Arduino Serial Command → Pan-Tilt Servo Motion
 ```
 
-## 📂 Repository Structure
+## 📂 Project Structure
 
 ```text
 Anti-Drone-System/
-├── assets/
-├── src/
-├── arduino/
-├── dataset/
-├── notebooks/
-├── docs/
+├── assets/          # Images, sample outputs, demo media
+├── src/             # Core detection & tracking scripts
+├── arduino/         # Arduino sketches for servo control
+├── dataset/         # Training/validation data
+├── notebooks/       # Experiment & training notebooks
+├── docs/            # Documentation
 ├── requirements.txt
 └── README.md
 ```
 
-## 🚀 Installation
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Anti-Drone-System.git
@@ -63,25 +63,24 @@ python src/detect.py
 
 ## 🛠️ Tech Stack
 
-| Area | Technology |
-|------|------------|
-| AI | YOLOv8 |
-| Vision | OpenCV |
-| DL | PyTorch |
-| Hardware | Arduino Uno |
-| Language | Python |
+| Component | Tool/Framework |
+|-----------|----------------|
+| Object Detection | YOLOv8 |
+| Computer Vision | OpenCV |
+| Deep Learning Backend | PyTorch |
+| Microcontroller | Arduino Uno |
+| Core Language | Python |
 
-## 📈 Future Scope
+## 📈 Roadmap
 
-- Multi-drone tracking
-- ROS2 integration
-- Edge AI deployment
-- Thermal camera support
+- [ ] Multi-drone simultaneous tracking
+- [ ] ROS2 integration for robotic platforms
+- [ ] Edge AI deployment (Jetson/Coral)
+- [ ] Thermal camera support for low-visibility detection
 
 ## 👨‍💻 Author
 
 **Mohammad Sahil Khan**
-
 B.Tech Mechanical Engineering, Jamia Millia Islamia
 
-⭐ If you found this project useful, please give it a star.
+If this project helped you, consider giving it a ⭐!
